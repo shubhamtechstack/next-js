@@ -3,7 +3,7 @@ import { libreCaslon } from "../../layout";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="px-10 mt-5">
+    <div className="px-10 mt-4">
       <section className="relative h-[80vh] rounded-2xl w-full overflow-hidden">
 
         {/* Background Image */}
@@ -14,31 +14,37 @@ const HeroSection: React.FC = () => {
         />
 
         /* gradient */
-        <div className="absolute inset-0 bg-gradient-to-r from-[#001511]/90 via-[#001521]/60 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#001511] via-[#001521]/90 to-transparent z-10"></div>
 
         {/* Content */}
         <div className="relative z-20 flex h-full w-full">
 
           {/* Left Content */}
-          <div className="flex w-1/2 flex-col justify-center px-12 text-white">
-            <h1 className={`${libreCaslon.className} text-5xl font-bold leading-tight`}>
-              Invested in you,
+          <div className="flex w-[60%] gap-2 flex-col justify-center px-12 text-white">
+            <h1 className={`${libreCaslon.className} text-6xl  leading-tight`}>
+              Invested in You,
               <br></br>
               For Life
             </h1>
 
-            <p className="mt-4 text-lg text-blue-100">
-              Whether you’re planning to build a home, expand your business, or prepare for retirement, our personalised financial advice puts you in charge of life’s big moments.
+            <p className=" text-m text-[#DEF2FF]">
+              Whether financial advice puts you in charge of life’s big moments. you’re planning to build a home, expand your business, or prepare for retirement, our personalised 
+            </p><br></br>
+      <p className="text-m text-[#DEF2FF]">
+              Whether financial advice puts you in charge of life’s big moments. 
             </p>
 
 
-            <div className="flex gap-3">
-              <button className="mt-6 w-fit rounded-full bg-transparent border border-white px-6 py-3 font-semibold  transition">
+            <div className="">
+              <button className="mt-6 relative  overflow-hidden flex gap-2 items-center justify-between  rounded-full bg-transparent border border-[#8fe020] w-fit font-semibold  transition pl-8 pr-50 py-3">
                 By ambitious
-              </button>
-              <button className="mt-6 w-fit rounded-full bg-[#8fe020] px-6 py-3 font-semibold text-black hover:bg-blue-100 transition">
+
+<button className=" w-fit absolute right-0 rounded-full bg-[#8fe020] px-12 py-3 font-semibold text-black hover:bg-blue-100 transition">
                Start here
               </button>
+
+              </button>
+              
             </div>
 
           </div>
