@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Navbar01 from "./components/Navbar01";
+import Navbar from "./components/Navbar/Navbar"
+import HeroSection from "./components/Home/Hero-section";
+import { Libre_Caslon_Text } from "next/font/google";
+
+ export const libreCaslon = Libre_Caslon_Text({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,8 +36,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar01/>
         <Navbar/>
+        <HeroSection/>
         {children}
       </body>
     </html>
